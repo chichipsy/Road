@@ -265,7 +265,6 @@ a:hover{
 	visibility: hidden;
 	transition: .5s;
 	z-index: 99;
-	visibility: hidden;
 }
 
 .info_more .wrap{
