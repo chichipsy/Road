@@ -115,11 +115,11 @@ $(function(){
             "opacity": ".1",
             "visibility": "hidden",
         });
-        setTimeout(function(){$(".Info_pop_background").css("z-index", "-1");},100);
-        $("body").css("overflow", "scroll");
-	$(".info_more .wrap .txt .p1").css("visibility", "hidden");
+        $(".info_more .wrap .txt .p1").css("visibility", "hidden");
         $(".info_more .wrap .txt .p2").css("visibility", "hidden");
         $(".info_more .wrap .txt .p3").css("visibility", "hidden");
+        setTimeout(function(){$(".Info_pop_background").css("z-index", "-1");},100);
+        $("body").css("overflow-y", "scroll");
     });
     
     //------------Scroll-----------------//
