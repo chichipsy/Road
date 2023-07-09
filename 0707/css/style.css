@@ -642,8 +642,8 @@ a:hover{
 
 #activity .acitive{
 	padding:  50px 150px 0;
-	background: var(--vice_color);
 	border-radius: 70px;
+	background: linear-gradient(45deg,var(--vice_color) 10%,var(--e_color));
 	width: 100vw;
 	height: 100vh;
 }
