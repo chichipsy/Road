@@ -722,11 +722,50 @@ a:hover{
 
 #test ul{
 	display: flex;
-	
 }
 
 #test ul li{
 	position: relative;
-	transition: 5s;
+	transition: 1s;
 	left: 0%;
+}
+
+#test ul li .txt{
+	position: absolute;
+	top: 250px;
+	left: 350px;
+	max-width: 700px;
+}
+
+#test ul li .txt h1{
+	font-size: 4.3rem;
+	font-weight: 600;
+	color: var(--b);
+	margin-bottom: 25px;
+}
+
+#test ul li .txt p{
+	font-size: 1.9rem;
+	font-weight: 900;
+	margin-left: 50px;
+	letter-spacing: .3rem;
+	line-height: 1.6;
+	color: var(--b);
+}
+
+#test ul li .txt a{
+	color: var(--b);
+	border: 3px solid var(--b);
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1.9rem;
+	position: absolute;
+	top: 110%;
+	left: 40%;
+	transition: .5s;
+}
+
+#test ul li .txt a:hover{
+	background: var(--b);
+	color: var(--w);
 }

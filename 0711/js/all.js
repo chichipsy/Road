@@ -142,6 +142,12 @@ $(function(){
     //         console.log(e.clientX)
     //     }
     // });
+
+    //------------Test-----------------//
+    $("#Start_test").click(function () { 
+        $("#test ul li").css("left", "-100%");
+        
+    });
     //------------Scroll-----------------//
     $(window).scroll(function () { 
         var scroll = $(window).scrollTop();
