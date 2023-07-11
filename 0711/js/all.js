@@ -144,14 +144,32 @@ $(function(){
     // });
 
     //------------Test-----------------//
+    let test_num = 0;
     $("#Start_test").click(function () { 
-        $("#test ul li").css("left", "-100%");
+        test_num = 1;
+        $("#test ul li").css("left", -(test_num * 100) + "%");
+        
+    });
+    $(".Next_test").click(function () {
+        test_num += 1;
+        console.log(test_num)
+        $("#test ul li").css("left", -(test_num * 100) + "%");
+    });
+    $(".Pre_test").click(function () {
+        test_num -= 1;
+        $("#test ul li").css("left", -(test_num * 100)+"%");
+    });
+    $("#Cheak_Test").click(function (e) { 
+        test_num = 6;
+        $("#test ul li").css("left", -(test_num * 100)+"%");
+    });
+    $("#Submit_test").click(function (e) { 
+        e.preventDefault();
         
     });
     //------------Scroll-----------------//
     $(window).scroll(function () { 
         var scroll = $(window).scrollTop();
         console.log(scroll);
-        
     });
 });
