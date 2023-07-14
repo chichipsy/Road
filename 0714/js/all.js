@@ -195,6 +195,7 @@ $(function(){
         if($("#footer_input").val().length > 0){
             if(pattern.test($("#footer_input").val())){
                 alert("送出成功");
+                $("#footer_input").val("");
             }else{
                 alert("電子郵件格式不正確");
             }
